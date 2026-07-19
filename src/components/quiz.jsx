@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 export function Quiz() {
   const questionBank = [
     {
@@ -22,5 +24,46 @@ export function Quiz() {
     }
   ]
 
-  return <div>Quiz</div>
+  const initialAnswers = [null, null, null]
+
+  const [userAnswers, setUserAnswers] = useState(initialAnswers)
+
+  const [currentQuestion, setCurrentQuestion] = useState(0)
+
+  function handleSelectedOption(option) {
+    const newUserAnswers = [...userAnswers]
+    newUserAnswers[currentQuestion] = option
+    setUserAnswers(newUserAnswers)
+  }
+
+  function goToNext() {
+    setCurrentQuestion(currentQuestion + 1)
+  }
+
+  function goToPrev() {
+    if (currentQuestion > 0) {
+      setCurrentQuestion(currentQuestion - 1)
+    }
+  }
+
+  return (
+    <div>
+      <h2>Question 1</h2>
+      <p className="question">{questionBank[currentQuestion].question}</p>
+
+      {questionBank[currentQuestion].options.map(option => (
+        <button className="option" onClick={() => handleSelectedOption(option)}>
+          {" "}
+          {option}{" "}
+        </button>
+      ))}
+
+      <div className="nav-buttons">
+        <button onClick={goToPrev} disabled={currentQuestion === 0}>
+          Previous
+        </button>
+        <button onClick={goToNext}>Next</button>
+      </div>
+    </div>
+  )
 }
