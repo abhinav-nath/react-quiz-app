@@ -21,3 +21,17 @@ A simple, modern, dynamic, and responsive Quiz Application built with **React** 
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Language**: JavaScript (JSX)
 - **Styling**: Vanilla CSS
+
+---
+
+## Quiz Page
+
+<p align="center">
+  <img width="703" height="530" alt="questions" src="https://github.com/user-attachments/assets/4d8b8911-9f5c-4603-ada6-5609e2685658" />
+</p>
+
+## Quiz Completed
+
+<p align="center">
+  <img width="699" height="325" alt="quiz completed" src="https://github.com/user-attachments/assets/cb0d4eeb-95d9-4b95-936e-08b012784b81" />
+</p>
