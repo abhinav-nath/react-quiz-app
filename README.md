@@ -1,16 +1,23 @@
-# React + Vite
+# 💡 React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple, modern, dynamic, and responsive Quiz Application built with **React** and **Vite**. This project demonstrates core React concepts including component architecture, state management using `useState`, passing props across component hierarchies, conditional CSS styling, and array manipulations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Question Engine**: Loads questions and options dynamically from a central question bank.
+- **Interactive Navigation**: Seamlessly navigate through questions with `Previous` and `Next` buttons.
+- **State Persistence**: Maintains user answers across different questions throughout the quiz session.
+- **Dynamic CSS Styling**: Active selection state highlighted visually using tailored CSS classes.
+- **Score Calculation**: Automatically evaluates correct answers upon completion and presents a detailed summary score.
+- **Quiz Reset**: Allows users to clear their choices and restart the quiz seamlessly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Library**: [React 19+](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Language**: JavaScript (JSX)
+- **Styling**: Vanilla CSS
