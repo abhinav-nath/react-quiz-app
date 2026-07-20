@@ -47,7 +47,7 @@ export function Quiz() {
 
   return (
     <div>
-      <h2>Question 1</h2>
+      <h3 style={{ color: "#42a5f5" }}>Question {currentQuestion + 1}</h3>
       <p className="question">{questionBank[currentQuestion].question}</p>
 
       {questionBank[currentQuestion].options.map(option => (
