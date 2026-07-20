@@ -1,4 +1,4 @@
-export function Results({ userAnswers, questionBank }) {
+export function Results({ userAnswers, questionBank, restartQuiz }) {
   function getScore() {
     let finalScore = 0
 
@@ -19,7 +19,9 @@ export function Results({ userAnswers, questionBank }) {
       <p>
         Your Score: {score}/{questionBank.length}
       </p>
-      <button className="restart-button">Restart Quiz</button>
+      <button className="restart-button" onClick={restartQuiz}>
+        Restart Quiz
+      </button>
     </div>
   )
 }
